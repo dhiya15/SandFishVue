@@ -3,9 +3,8 @@
   <div>
     <v-app-bar dense app color="white" elevation="3" light>
       <v-toolbar-title>
-        <span class="font-weight-light grey--text">SORP</span>
-        <span class="mx-1"></span>
-        <span>Bechar</span>
+        <span class="font-weight-light grey--text">Snad</span>
+        <span>Fish</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">

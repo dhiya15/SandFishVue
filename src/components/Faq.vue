@@ -22,7 +22,7 @@
                 </v-col>
                 <v-col lg="5" md="6" align-self="center" align="center" class="text-center hidden-sm-and-down">
 <!--                    <img class="faq-image" alt="hero image" height="300" :src="'http://localhost:8000/' + faq_header.image">-->
-                   <img class="faq-image" alt="hero image" height="300" :src="'https://sandfish.club/Dashboard/SandFishBack/public/' + item.image">
+                   <img class="faq-image" alt="hero image" height="300" :src="'https://sandfish.club/Dashboard/SandFishBack/public/' + faq_header.image">
                 </v-col>
             </v-row>
         </v-container>

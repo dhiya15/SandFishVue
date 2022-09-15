@@ -102,7 +102,7 @@
                                     <v-progress-circular
                                             v-if="contactLoad === true"
                                             indeterminate
-                                            color="green"
+                                            color="#F6B401"
                                             size="20"
                                     ></v-progress-circular>
                                 </v-btn>
@@ -139,6 +139,7 @@
             nameRules: [
                 v => !!v || 'Name is required',
                 v => (v && v.length <= 100) || 'Name must be less than 100 characters',
+                v => (v && v.length > 5) || 'Name must be more than 5 characters',
             ],
             email: '',
             emailRules: [
@@ -149,6 +150,7 @@
             messageRules: [
                 v => !!v || 'Message is required',
                 v => (v && v.length <= 500) || 'Message must be less than 500 characters',
+                v => (v && v.length > 10) || 'Name must be more than 10 characters',
             ],
             magasin: {},
             contactLoad: false,
