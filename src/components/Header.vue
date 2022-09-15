@@ -42,13 +42,9 @@
 
     data: () => ({
       menus: [
-        {title: "Accueil", route:"/"},
-        {title: "Why US", route:"/#why-us"},
-        {title: "Department", route:"/#department"},
-        {title: "FAQ", route:"/#faq"},
-        {title: "Our Services", route:"/#services"},
-        {title: "How it Work", route:"/#how-it-work"},
-        {title: "Contact", route:"/contact"}
+        {title: "Home", route:"/"},
+        {title: "Contact", route:"/contact"},
+        {title: "Join-US", route:"/join-us"}
       ]
     })
   }

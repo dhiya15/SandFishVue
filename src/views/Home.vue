@@ -22,7 +22,7 @@
             <v-progress-circular
                     indeterminate
                     size="60"
-                    color="green"
+                    color="#FFF59E"
             ></v-progress-circular>
         </v-overlay>
     </div>

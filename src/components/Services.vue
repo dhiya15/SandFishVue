@@ -7,10 +7,12 @@
             </p>
             <v-row class="services-row">
                 <v-col md="4" sm="6" cols="12" v-for="index in paginationLength" :key="index">
-                    <img class="service-image" alt="service image" height="150" :src="'http://sorp-bechar.byethost10.com/back-side/example-app/public/' + services_content[page * paginationLength - paginationLength + index - 1].image">
+                    <img class="service-image" alt="service image" height="150" :src="'https://sandfish.club/Dashboard/SandFishBack/public/' + services_content[page * paginationLength - paginationLength + index - 1].image">
+<!--                    <img class="service-image" alt="service image" height="150" :src="'http://localhost:8000/' + services_content[page * paginationLength - paginationLength + index - 1].image">-->
                     <h3 class="service-title">{{services_content[page * paginationLength - paginationLength + index - 1].title}}</h3>
                     <p class="service-content">
-                        {{services_content[page * paginationLength - paginationLength + index - 1].description}}
+                        {{services_content[page * paginationLength - paginationLength + index - 1].description}} <br>
+                        {{services_content[page * paginationLength - paginationLength + index - 1].created_at}}
                     </p>
                     <v-btn
                         class="service-button"

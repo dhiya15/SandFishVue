@@ -7,7 +7,9 @@
             </p>
             <v-row class="how-it-work-row">
                 <v-col class="how-it-work-item" md="3" sm="6" cols="12" v-for="index in paginationLength" :key="index" @click="$router.push({path: '/details/' + how_it_work_content[page * paginationLength - paginationLength + index - 1].id})">
-                    <img class="how-it-work-item-image" alt="service image" height="150" :src="'http://sorp-bechar.byethost10.com/back-side/example-app/public/' + how_it_work_content[page * paginationLength - paginationLength + index - 1].image">
+                    <img class="how-it-work-item-image" alt="service image" height="150" :src="'https://sandfish.club/Dashboard/SandFishBack/public/' + how_it_work_content[page * paginationLength - paginationLength + index - 1].image">
+<!--                    <img class="how-it-work-item-image" alt="service image" height="150" :src="'http://localhost:8000/' + how_it_work_content[page * paginationLength - paginationLength + index - 1].image">-->
+<!--                    -->
                     <h3 class="how-it-work-item-title">{{how_it_work_content[page * paginationLength - paginationLength + index - 1].title}}</h3>
                     <p class="how-it-work-item-content">
                         {{how_it_work_content[page * paginationLength - paginationLength + index - 1].description}}

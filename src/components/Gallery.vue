@@ -15,7 +15,8 @@
                         style="cursor: pointer;"
                 >
                     <div class="text-center" >
-                        <img :src="'http://sorp-bechar.byethost10.com/back-side/example-app/public/' + carousel.image" style="border-radius: 20px; width: 100%; height: 400px"/>
+<!--                        <img alt="image" :src="'http://localhost:8000/' + carousel.image" style="border-radius: 20px; width: 100%; height: 400px"/>-->
+                        <img :src="'https://sandfish.club/Dashboard/SandFishBack/public/' + carousel.image" style="border-radius: 20px; width: 100%; height: 400px"/>
                         <v-col class="text-pre-wrap" align="center" justify="center" align-self="center">
                             <span class="title">{{carousel.title}}</span>
                             <p>{{carousel.description}}</p>

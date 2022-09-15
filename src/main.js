@@ -13,8 +13,8 @@ import PublicationContent from "./views/PublicationContent";
 
 Vue.config.productionTip = false
 
-axios.defaults.baseURL = 'http://localhost:8000/api/';
-//axios.defaults.baseURL = 'http://sorp-bechar.byethost10.com/back-side/api/';
+//axios.defaults.baseURL = 'http://localhost:8000/api/';
+axios.defaults.baseURL = 'https://sandfish.club/Dashboard/api/';
 axios.defaults.headers.common = {
   "Content-Type": "application/json",
   Accept: "application/json",
