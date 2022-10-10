@@ -1,11 +1,11 @@
 <template>
-    <div  class="all">
+    <div  class="all" id="events">
         <v-container class="gallery">
             <h1 class="gallery-title">{{gallery_header.title}}</h1>
             <p class="gallery-content">
                 {{gallery_header.description}}
             </p>
-            <v-carousel cycle :vertical-delimiters="false" style="overflow: auto;" :show-arrows="true" :hide-delimiters="false" :hide-delimiter-background="true">
+            <v-carousel cycle style="overflow: auto;" :show-arrows="true" :hide-delimiters="true" :hide-delimiter-background="true">
                 <v-carousel-item
                         v-for="(carousel, i) in gallery_content"
                         :key="i"

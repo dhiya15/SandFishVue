@@ -7,6 +7,7 @@ Vue.use(VueRouter)
 
 import Home from './views/Home';
 import Contact from './views/Contact';
+import JoinUS from './views/JoinUS';
 import NotFound from './views/NotFound';
 import axios from 'axios'
 import PublicationContent from "./views/PublicationContent";
@@ -40,6 +41,13 @@ const router = new VueRouter({
       }
     },
     {
+      path: '/join-us',
+      component: JoinUS,
+      meta: {
+        title: 'Join US'
+      }
+    },
+    {
       path: '/details/:id',
       component: PublicationContent,
       props: true,
@@ -48,7 +56,7 @@ const router = new VueRouter({
       }
     },
     {
-      path: '/not-found',
+      path: '/*',
       component: NotFound,
       meta: {
         title: 'Error 404'

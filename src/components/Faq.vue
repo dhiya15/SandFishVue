@@ -1,5 +1,5 @@
 <template>
-    <div class="faq pt-15 pb-15">
+    <div class="faq pt-15 pb-15" id="faq">
         <v-container>
             <h1 class="faq-title">{{faq_header.title}}</h1>
             <p class="faq-content">

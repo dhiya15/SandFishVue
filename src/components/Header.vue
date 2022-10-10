@@ -9,8 +9,16 @@
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-list class="d-flex align-center" style="background-color: transparent">
-          <v-list-item v-for="(menu, index) in menus" :key="index" link :to="menu.route">
-            <v-list-item-title>{{menu.title}}</v-list-item-title>
+          <a style="text-decoration: none" :href="menu.id" v-for="(menu, index) in menus" :key="index">
+            <v-list-item  link>
+              <v-list-item-title>{{menu.title}}</v-list-item-title>
+            </v-list-item>
+          </a>
+          <v-list-item  link to="/contact">
+            <v-list-item-title>Contact US</v-list-item-title>
+          </v-list-item>
+          <v-list-item  link to="/join-us">
+            <v-list-item-title>Join US</v-list-item-title>
           </v-list-item>
           <v-spacer></v-spacer>
         </v-list>
@@ -23,8 +31,16 @@
             </v-btn>
           </template>
           <v-list>
-            <v-list-item v-for="(item, index) in menus" :key="index" link :to="item.route">
-              <v-list-item-title>{{ item.title }}</v-list-item-title>
+            <a style="text-decoration: none" :href="menu.id" v-for="(menu, index) in menus" :key="index">
+              <v-list-item  link>
+                <v-list-item-title>{{menu.title}}</v-list-item-title>
+              </v-list-item>
+            </a>
+            <v-list-item  link to="/contact">
+              <v-list-item-title>Contact US</v-list-item-title>
+            </v-list-item>
+            <v-list-item  link to="/join-us">
+              <v-list-item-title>Join US</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
@@ -41,9 +57,13 @@
 
     data: () => ({
       menus: [
-        {title: "Home", route:"/"},
-        {title: "Contact", route:"/contact"},
-        {title: "Join-US", route:"/join-us"}
+        {id: "/", title: "Home", route:"/"},
+        {id: "/#services", title: "Services", route:"/#services"},
+        {id: "/#workshops", title: "Workshops", route:"/#workshops"},
+        {id: "/#events", title: "Events", route:"/#events"},
+        {id: "/#faq", title: "FAQ", route:"/#faq"},
+        /*{id: "/contact",title: "Contact", route:"/contact"},
+        {id: "/join-us",title: "Join-US", route:"/join-us"}*/
       ]
     })
   }

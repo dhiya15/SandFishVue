@@ -53,7 +53,7 @@
                 <div class="contact-form mt-6">
                     <v-row>
                         <v-col md="6" cols="12">
-                            <iframe class="contact-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d869810.5244507256!2d-1.3202991925789533!3d31.614751479194123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd855f5061ac9881%3A0x97206fd4229749af!2z2KjYtNin2LE!5e0!3m2!1sar!2sdz!4v1661404573246!5m2!1sar!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe class="contact-map" :src="'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3398.4818338440095!2d'+ magasin.longitude +'!3d' + magasin.latitude +'!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xff196f0cf888f8f5!2zMzHCsDM1JzM1LjciTiAywrAxMycyNy4xIlc!5e0!3m2!1sar!2sdz!4v1663965947336!5m2!1sar!2sdz'" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </v-col>
                         <v-col md="6" cols="12">
                             <v-form

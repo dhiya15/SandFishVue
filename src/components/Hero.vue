@@ -11,8 +11,8 @@
                         Contact-US
                     </v-btn>
                 </v-col>
-                <v-col lg="5" md="5" cols="12" class="hidden-sm-and-down">
-                    <img class="hero-image text-right" alt="hero image" src="../assets/children.jpg">
+                <v-col lg="5" md="5" cols="12" class="hidden-sm-and-down" align-self="center">
+                    <img class="hero-image text-right" alt="hero image" :src="'https://sandfish.club/Dashboard' + magasin.logo">
                 </v-col>
             </v-row>
         </v-container>
@@ -58,8 +58,10 @@
         color: #66666a;
     }
     .hero-content {
-        font-size: 20px;
+        font-size: 16px;
         color: #66666a;
+        text-align: justify;
+        width: 90%;
     }
     .hero-button {
         padding: 50px;
@@ -83,7 +85,7 @@
 
     .hero-image {
         margin: 0 auto;
-        max-width: 400px;
+        /*max-width: 400px;*/
         width: 100%;
         height: auto;
         border-radius: 2.25rem;

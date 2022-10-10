@@ -1,6 +1,7 @@
 <template>
     <div>
         <Header/>
+
         <Hero :magasin="magasin"/>
         <!--
             <WhyUS :why_us_header="why_us_header" :why_us_content="why_us_content"/>
@@ -67,7 +68,7 @@
             gallery_header: {},
             gallery_content: [],
             why_us_header: {},
-            why_us_content: {}
+            why_us_content: {},
         }),
         created() {
             this.initialize()
@@ -129,5 +130,11 @@
         },
     }
 </script>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 
 

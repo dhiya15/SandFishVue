@@ -3,7 +3,7 @@
         <v-row class="text-center">
             <v-col class="footer-item" md="4" cols="12">
                 <h3 class="footer-item-title">{{magasin.name}}</h3>
-                <p class="footer-item-content">{{magasin.footer_short_des}}</p>
+                <p class="footer-item-content">{{magasin.footer_short_des}}<p/>
             </v-col>
             <v-col class="footer-item" md="4" cols="12">
                 <h3 class="footer-item-title">Address & Contact</h3>
@@ -22,7 +22,7 @@
                         <v-col cols="1"><a :href="'//' + magasin.facebook" target="_blank"><v-icon color="blue">mdi-facebook</v-icon></a></v-col>
                         <v-col cols="1"><a :href="'//' + magasin.twitter" target="_blank"><v-icon color="blue">mdi-twitter</v-icon></a></v-col>
                         <v-col cols="1"><a :href="'//' + magasin.instagram"><v-icon>mdi-instagram</v-icon></a></v-col>
-                        <v-col cols="1"><a :href="'//' + magasin.youtube"><v-icon color="red">mdi-youtube</v-icon></a></v-col>
+                        <v-col cols="1"><a :href="'//' + magasin.google_plus"><v-icon color="red">mdi-youtube</v-icon></a></v-col>
                     </v-row>
                 </p>
                 <p>
