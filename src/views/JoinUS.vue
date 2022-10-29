@@ -3,8 +3,7 @@
         <Header/>
         <div class="contact" style="background-color: #FFFEE9">
             <v-container>
-                <div class="contact-form mt-6">
-
+                <div class="contact-form mt-6" v-if="magasin.website_under_maintenance == 0">
                     <v-form  enctype="multipart/form-data" ref="form" v-model="valid" lazy-validation>
                         <v-stepper v-model="e1">
                         <v-stepper-header>
@@ -229,6 +228,9 @@
                     </v-stepper>
                     </v-form>
                 </div>
+                <div v-else class="mt-6">
+                    <img class="hero-image text-center" alt="hero image" src="../assets/closed.png">
+                </div>
             </v-container>
         </div>
         <Footer :magasin="magasin"/>
@@ -423,5 +425,13 @@
         border-radius: 30px;
         background-color: #EFF2F9;
         border-bottom: none;
+    }
+    .hero-image {
+        margin: 0 auto;
+        /*max-width: 400px;*/
+        width: 100%;
+        height: auto;
+        border-radius: 2.25rem;
+        box-shadow: 0 16px 32px 8px rgba(223, 105, 81, .25);
     }
 </style>

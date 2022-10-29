@@ -1,6 +1,6 @@
 <template>
     <section>
-        <v-container class="hero">
+        <v-container>
             <v-row>
                 <v-col lg="7" md="7" cols="12" align-self="center">
                     <h1 class="hero-title">{{magasin.title}}</h1>
