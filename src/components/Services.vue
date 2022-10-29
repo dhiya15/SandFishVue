@@ -9,7 +9,6 @@
                 <v-col md="4" sm="6" cols="12" v-for="index in paginationLength" :key="index">
                     <div class="services-item" v-if="index <= services_content.length">
                         <img class="service-image" alt="service image" height="150" :src="'https://sandfish.club/Dashboard/SandFishBack/public/' + services_content[page * paginationLength - paginationLength + index - 1].image">
-    <!--                    <img class="service-image" alt="service image" height="150" :src="'http://localhost:8000/' + services_content[page * paginationLength - paginationLength + index - 1].image">-->
                         <h3 class="service-title">{{services_content[page * paginationLength - paginationLength + index - 1].title}}</h3>
                         <p class="service-content">
                             {{services_content[page * paginationLength - paginationLength + index - 1].description}} <br>

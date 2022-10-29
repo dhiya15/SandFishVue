@@ -100,33 +100,7 @@
                     console.log(error)
                     this.overlay = false
                 })
-            },
-            filterHours() {
-                this.slot = null
-                const splitDate = (this.cacSelectedDate.date).split('/');
-                const afterSplitCacSelectedDate = splitDate[1] + "/" + splitDate[0] + "/" + splitDate[2];
-                if(this.delivery_methode === 'CAC'){
-                    if ((this.cacSelectedDate.position === 1 && this.cacSelectedDate.en === "Wednesday") ||
-                        (this.cacSelectedDate.position === 1 && this.cacSelectedDate.en === "Friday")) {
-                        this.delivery_slot_hours = this.delivery_slots.filter((item) => {
-                            const conditionOptions = this.options.length > 0 && this.options.some((item) => item.is_cooking);
-                            const condition = conditionOptions ? item.start_hour === 17 : item.start_hour >= 14;
-                            return this.dateToYMD(new Date(item.date_slot)) === this.dateToYMD(new Date(afterSplitCacSelectedDate)) &&
-                                condition
-                        });
-                        return;
-                    }
-                    if (this.cacSelectedDate.date === "Saturday") {
-                        this.delivery_slot_hours = this.delivery_slots.filter((item =>
-                                this.dateToYMD(new Date(item.date_slot)) === this.dateToYMD(new Date(afterSplitCacSelectedDate)) &&
-                                item.start_hour <= 16
-                        ));
-                        return;
-                    }
-                }
-                this.delivery_slot_hours = this.delivery_slots.filter((item => this.dateToYMD(new Date(item.date_slot)) === this.dateToYMD(new Date(afterSplitCacSelectedDate))));
-
-            },
+            }
         },
     }
 </script>
