@@ -72,6 +72,51 @@
         }),
         created() {
             this.initialize()
+
+
+
+
+            const myJSON = `
+                [
+                {
+                    "2010-10-12": [
+                        {
+                            "nom": "user 1"
+                        },
+                        {
+                            "nom": "user 2"
+                        },
+                        {
+                            "nom": "user 3"
+                        }
+                    ]
+                },
+                    {
+                        "2010-10-12": [
+                            {
+                                "nom": "user 1"
+                            },
+                            {
+                                "nom": "user 2"
+                            },
+                            {
+                                "nom": "user 3"
+                            }
+                        ]
+                    }
+                ]
+            `;
+            var jsonData = JSON.parse(myJSON);
+            for (var i = 0; i < jsonData.length; i++) {
+                var counter = jsonData[i];
+                for (var key in counter) {
+                    console.log("Key: " + key);
+                    console.log("Value: " + counter[key]);
+                }
+            }
+
+
+
         },
         mounted() {
             document.title = 'Home'
